@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Imagencripto from "../src/assets/imagen-criptos.png"
+import Formulario from "./Formulario";
 
 const Contenedor = styled.div`
     max-width:900px;
@@ -47,7 +48,9 @@ function App() {
         src={Imagencripto}
         alt="imagenes criptominedas"
       />
-      <Heading> Cotiza ciptomonedas al instante </Heading>
+      <Heading> Cotiza ciptomonedas al instante         
+      </Heading>
+      <Formulario />
     </Contenedor>
   )
 };

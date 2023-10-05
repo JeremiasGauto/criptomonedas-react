@@ -48,7 +48,7 @@ function App() {
         src={Imagencripto}
         alt="imagenes criptominedas"
       />
-      <Heading> Cotiza ciptomonedas al instante         
+      <Heading> Cotiza ciptomonedas al instante
       </Heading>
       <Formulario />
     </Contenedor>

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import useSelectMonedas from "./hooks/useSelectMonedas"
 
 const InputSubmit = styled.input`
     background-color: #9497ff;
@@ -20,9 +21,23 @@ const InputSubmit = styled.input`
 `
 
 function Formulario() {
+
+    const monedas = [
+        { id: 'USD', nombre: 'Dolar de Estados Unidos' },
+        
+        { id: 'MXN', nombre: 'Peso Mexicano' },
+
+        { id: 'EUR', nombre: 'Euro' },
+        { id: 'GBP', nombre: 'Libra Esterlina' },
+    ]
+
+    const [SelectMoneditas] = useSelectMonedas('Selecciona tu moneda', monedas);
+
+   
     return (
 
         <form>
+            <SelectMoneditas />
             <InputSubmit
                 type="submit"
                 value="Cotizar"
